@@ -17,12 +17,14 @@
 * (建議) 也要改 `RegisterController@validator` 把 `username` 視為 `required`
 * 測試看看應該可以了
 
-## 狀況二：用 username 或是 email 應該都要可以登入
+## 狀況二： 用 username 或是 email 應該都要可以登入
 
 * 改 view 欄位描述調整，並把 email 驗證拿掉 (表示要後端自己驗是不是 email)
-*
+* 調整 `LoginController`，重點在覆寫 `credentials` 這個方法
+* 如果要改更大，還可以覆寫 `attemptLogin` 方法
 
+## 狀況三： 密碼輸錯的訊息是英文的？幫我弄成中文
 
+## 狀況四： 幾頁未登入的人不要導回首頁行不行？
 
-
-
+## 狀況四： 忘記密碼信的內容怎麼改
